@@ -43,4 +43,9 @@ services:
     ports:
       - 3001:80
     container_name: project_phpmyadmin
-      
+
+networks:  
+  default:  
+    driver: bridge  
+    driver_opts:  
+      com.docker.network.driver.mtu: 1450 
